@@ -1,17 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Login from "./Components/Auth/Login/Login";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+
+    <>
+     <Router>
+       <Switch>
+         <Route path="/home">
+          <Home></Home>
+         </Route>
+         <Route path="/login">
+           <Login></Login>
+         </Route>
+       </Switch>
+     </Router>
+    </>
+
   );
 }
 
