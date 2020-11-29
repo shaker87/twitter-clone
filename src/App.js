@@ -10,6 +10,7 @@ import Home from "./Components/Home/Home";
 
 function App() {
   return (
+
     <>
      <Router>
        <Switch>
@@ -22,6 +23,7 @@ function App() {
        </Switch>
      </Router>
     </>
+
   );
 }
 
