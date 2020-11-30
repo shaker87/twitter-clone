@@ -1,19 +1,27 @@
 import React from 'react';
+import './Home.css';
+import Post from './Post/Post';
 import Sidebar from './Sidebar';
+import TweetPost from './TweetPost/TweetPost';
 
 const Home = () => {
+
+
     return (
-        <div className="container mt-4">
+        <div className="container">
            <div className="row">
                <div className="col-md-3 border-right">
                    <Sidebar/>
                </div>
-               <div className="col-md-6 border-right">
-                   <div>
-                        <div class="form-group">
-                          <textarea className="form-control" placeholder="What's happening?" rows="5"></textarea>
-                        </div>
-                        <button className="btn btn-info rounded-pill px-4">Tweet</button>
+               <div className="news-feed col-md-6 border-right ">
+                   <div className="sticky-top home-top p-3">
+                    <h4 className="">Home</h4> 
+                   </div>                                  
+                   <div className="shadow">                                  
+                        <TweetPost/>
+                   </div>
+                   <div className="post-card">
+                       <Post />
                    </div>
                </div>
                <div className="col-md-3">
