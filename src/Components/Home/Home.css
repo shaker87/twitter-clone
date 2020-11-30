@@ -1,0 +1,21 @@
+.home-top{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+}
+.news-feed{
+    width: 100%;
+    margin: 0;
+}
+.profile-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.post-area{
+    height: 70px;
+}
+.avatar-img{
+    width: 100%;
+}
